@@ -16,7 +16,7 @@ const Edit: FC<EditProps> = ({ position, onClose = () => {}, onRemove = () => {}
         "left": 499 + position.x
       } }>
       <div id="menu-header" className="relative flex justify-center border-dashed border-b border-black">
-        <h3 className="text-xs font-bold">Edit</h3>
+        <h3 className="text-xs text-black font-bold">Edit</h3>
         <img 
           className="absolute right-0 self-center cursor-pointer"
           alt="Close"
@@ -26,7 +26,7 @@ const Edit: FC<EditProps> = ({ position, onClose = () => {}, onRemove = () => {}
       </div>
       <div id="menu-body">
         <button 
-          className="text-xs border border-gray-400 rounded-sm w-full bg-gray-100 hover:bg-city cursor-pointer"
+          className="text-xs text-black border border-gray-400 rounded-sm w-full bg-gray-100 hover:bg-city cursor-pointer"
           onClick={ onRemove }>
           Remove
         </button>

@@ -6,6 +6,7 @@ type Position = {
 type SingleImageComponentProps = {
   category: Categories,
   name: string,
+  text: string,
   extension?: AssetExtensions
 }
 

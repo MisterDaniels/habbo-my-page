@@ -34,6 +34,7 @@ export default function Home() {
       props: {
         category: Categories.General,
         name: 'addogs',
+        text: 'I love pets',
         extension: 'gif',
         position: {
           x: 10,
@@ -42,6 +43,18 @@ export default function Home() {
       } as StickerProps,
       isVisible: true,
       quantity: 2
+    } as ItemsList,
+    {
+      id: 0,
+      type: ItemTypes.Background,
+      props: {
+        category: Categories.General,
+        name: 'bg_rain',
+        text: 'Its raining',
+        extension: 'gif'
+      } as BackgroundProps,
+      isVisible: true,
+      quantity: 1
     } as ItemsList
   ]);
   const [ canvasItems, setCanvasItems ] = useState<Array<ItemsList>>([]);
